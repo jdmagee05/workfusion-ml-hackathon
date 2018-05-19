@@ -48,7 +48,6 @@ public class PostProcessorExample implements Processor<IeDocument> {
        }
     }
     
-    @SuppressWarnings("deprecation")
 	private void NormalizeInvoiceDate(Optional<Field> invoiceDate) {
        OcrDateNormalizer ocrDateNormalizer = new OcrDateNormalizer("MM/dd/yyyy");
        try {
